@@ -1,0 +1,1 @@
+<?php header('Location: partials/home.php') ;  ?>
