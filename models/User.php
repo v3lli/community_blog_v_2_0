@@ -83,39 +83,34 @@ class User{
     }
 
     function if_email_exists(){
-        $query = ' SELECT * FROM ' . $this->table . ' u WHERE u.email = ? OR LIMIT 0,1';
+        $query = ' SELECT u.first_name, 
+                        u.last_name, 
+                        u.mobile, 
+                        u.gender, 
+                        u.isadmin, 
+                        u.created_at, 
+                        u.password, 
+                        u.handle 
+                        FROM 
+                        ' . $this->table . ' 
+                        u WHERE 
+                        u.email = 
+                        '.$this->email.' 
+                        LIMIT 0,1';
 
-        $stmt = $this->prep_clean($query);
-
-        $stmt->bindParam(1, $this->email);
-
-        if($stmt->execute()) {
-
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            $this->first_name = $row['first_name'];
-            $this->last_name = $row['last_name'];
-            $this->email = $row['email'];
-            $this->mobile = $row['mobile'];
-            $this->gender = $row['gender'];
-            $this->isadmin = $row['isadmin'];
-            $this->created_at = $row['created_at'];
-            $this->password = $row['password'];
-            $this->handle = $row['handle'];
-            return true;
-        }
-            return false;
-
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt;
     }
 
-    function get_user_byID(){
-    }
-
-    function login(){
-    }
-
-    function logout(){
-    }
+//    function get_user_byID(){
+//    }
+//
+//    function login(){
+//    }
+//
+//    function logout(){
+//    }
 
 
 }

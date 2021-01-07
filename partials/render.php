@@ -22,7 +22,7 @@ include '../controllas/art.con.php';
     <div class = "d-flex justify-content-between container">
         <img class="ml-3 " style = "max-height: 5rem;" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
         <div class = "ml-auto d-inline-flex justify-content-around align-items-center">
-        <p class="my-1"> Hi ' . $_SESSION["handle"] . '</p><br>
+        <p class="my-1"> Hi ' . $_SESSION['handle'] . '</p><br>
                 <form class="" action = "controlla/logout.con.php" method = "POST">
                     <button class = "form-control-sm mx-3 btn-sm btn-outline-secondary" type = "submit" name = "logout">Log Out</button>
                 </form>
