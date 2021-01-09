@@ -83,7 +83,7 @@ class User{
     }
 
     function if_email_exists(){
-        $query = ' SELECT u.first_name, 
+        $query = 'SELECT u.first_name, 
                         u.last_name, 
                         u.mobile, 
                         u.gender, 
@@ -95,12 +95,27 @@ class User{
                         ' . $this->table . ' 
                         u WHERE 
                         u.email = 
-                        '.$this->email.' 
+                        "'.$this->email.'" 
                         LIMIT 0,1';
 
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
-        return $stmt;
+
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($this->password == $row['password'])
+        {
+            $this->first_name = $row['first_name'];
+            $this->last_name = $row['last_name'];
+            $this->email = $row['email'];
+            $this->handle = $row['handle'];
+            $this->isadmin = $row['isadmin'];
+            $this->mobile = $row['mobile'];
+            $this->last_name = $row['gender'];
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 //    function get_user_byID(){

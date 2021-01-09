@@ -19,11 +19,13 @@ $user = new User($db);
 $data = json_decode(file_get_contents("php://input"));
 
 $user->email = $data->email;
-
-$res = $user->if_email_exists();
-
-var_dump($res);
-
-
+$user->password = $data->password;
+if($user->if_email_exists()) {
+    echo json_encode($user);
+}else{
+    echo json_encode( array(
+       "message" => "no such user"
+    ));
+}
 
 

@@ -22,9 +22,6 @@ if(isset($_POST["Login"]))
     else{
         $cur_loc = '/RVIII/partials/home.php';
     }
-
-
-
     if (empty($email) || empty($pw))
     {
         header("Location:" . $cur_loc . "?error=emptyfields");
@@ -49,25 +46,22 @@ if(isset($_POST["Login"]))
             'Content-Type: application/json'
         ]);
         $res = json_decode(curl_exec($ch));
-        curl_close($ch);
-//        var_dump($res);
-        if($res!=0){
+//        die(var_dump($res->handle));
+        if($res->handle!= null){
             session_start();
-            $_SESSION['first_name'] = $res[0]->first_name;
-            $_SESSION['last_name'] = $res[0]->last_name;
-            $_SESSION['gender'] = $res[0]->gender;
-            $_SESSION['mobile'] = $res[0]->mobile;
-            $_SESSION['email'] = $res[0]->email;
-            $_SESSION['password'] = $res[0]->password;
-            $_SESSION['created_at'] = $res[0]->created_at;
-            $_SESSION['isadmin'] = $res[0]->isadmin;
-            $_SESSION['handle'] = $res[0]->handle;
-            header("Location:" . $cur_loc);
+            $_SESSION['first_name'] = $res->first_name;
+            $_SESSION['last_name'] = $res->last_name;
+            $_SESSION['email'] = $res->email;
+            $_SESSION['mobile'] = $res->mobile;
+            $_SESSION['handle'] = $res->handle;
+            $_SESSION['isadmin'] = $res->isadmin;
+            $_SESSION['created_at']= $res->created_at;
+            curl_close($ch);
+            header("Location:" . $cur_loc. "?alert=success");
             }else{
+            curl_close($ch);
             header("Location:" . $cur_loc . "?error=something_wrong");
-
             }
-
     }
 
 }
