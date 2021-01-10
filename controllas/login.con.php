@@ -49,6 +49,7 @@ if(isset($_POST["Login"]))
 //        die(var_dump($res->handle));
         if($res->handle!= null){
             session_start();
+            $_SESSION['id'] = $res->id;
             $_SESSION['first_name'] = $res->first_name;
             $_SESSION['last_name'] = $res->last_name;
             $_SESSION['email'] = $res->email;

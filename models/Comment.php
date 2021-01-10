@@ -70,5 +70,8 @@ class Comment
         if ($stmt->execute()) {
             return true;
         }
+        else{
+            return false;
+        }
     }
 }

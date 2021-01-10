@@ -84,6 +84,7 @@ class User{
 
     function if_email_exists(){
         $query = 'SELECT u.first_name, 
+                        u.id,
                         u.last_name, 
                         u.mobile, 
                         u.gender, 
@@ -104,6 +105,7 @@ class User{
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($this->password == $row['password'])
         {
+            $this->id = $row['id'];
             $this->first_name = $row['first_name'];
             $this->last_name = $row['last_name'];
             $this->email = $row['email'];
