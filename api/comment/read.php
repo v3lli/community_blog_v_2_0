@@ -11,12 +11,12 @@ include_once '../../models/Comment.php';
 $database = new Database();
 $db = $database->connect();
 
-//comment instance
-
-
 // Get ID
 $art_id = isset($_GET['id']) ? $_GET['id'] : die();
+
+//comment instance
 $comment = new Comment($db, $art_id);
+
 //query
 $res = $comment->read();
 
@@ -26,7 +26,7 @@ $number = $res->rowCount();
 if ($number > 0){
 
     $comment_list = array();
-    while($row = $res->fetch(PDO::FETCH_ASSOC)) {
+    while($row = $res->fetch(PDO::FETCH_ASSOC)){
         extract($row);
         $commentListItem = array(
             'id' => $id,
@@ -37,8 +37,9 @@ if ($number > 0){
             'create_date' => $create_date
         );
         array_push($comment_list, $commentListItem);
-        echo(json_encode($comment_list));
     }
+    echo json_encode($comment_list);
+    return true;
 }else{
     echo (json_encode(
         array('message' => 'No Comment')

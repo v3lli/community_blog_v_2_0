@@ -1,5 +1,5 @@
 <?php
- if(isset($_POST['comment'])){
+ if(isset($_POST['Comment'])){
      $cur_loc = $_POST['url_comment'];
      $artid = $_POST['articleid'];
      $body = $_POST['body'];

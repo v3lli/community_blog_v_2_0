@@ -1,9 +1,12 @@
 <?php
+
+include_once "../controllas/art.con.php";
+
 function render_article(){
     $article = get_article($_GET["id"]);
     echo ' <div class="container">
                 <header style="margin-top: 2rem;" class ="container">
-                    <h3 style ="margin-left: 1rem; font-size: 140%" >' . $article[0]->title . '</h3>
+                    <h3 style ="margin-left: 1rem; font-size: 140%">' . $article[0]->title . '</h3>
                     <p style ="margin-left: 1rem; font-size: 80%">by ' . $article[0]->author . '</p>
                 </header>
                 <article class="mx-auto col-sm-12">
@@ -22,13 +25,13 @@ function render_article(){
 
 function render_comments($id){
     // comment api call
-    $yarns = get_comments($id);
     echo '<div id = "comment" class="well container">
                 <h4 style ="opacity: 0.45;" class="my-5" >C O M M E N T S..</h4>';
+    $yarns = get_comments($id);
     //looping render
     foreach ($yarns as $yarn)
     {
-        echo '     <header>
+        echo '<header>
                         <p><strong>' . $yarn->user_handle . '</strong></p>
                    </header>
                    <p>' . $yarn->body . '
@@ -36,7 +39,9 @@ function render_comments($id){
                    <small>' . $yarn->create_date . '</small>
                    <hr>';
     }
+    //close div tag
     echo '</div>';
+    //comment form or login form
     echo '<div id = "commentform" class= "py-5">';
         if (isset($_SESSION['handle'])){
             echo '<form  style ="opacity: 0.85" method="POST" action="../controllas/comment.con.php" class="w-100">
@@ -64,5 +69,6 @@ function render_comments($id){
                     </form>
                     <h6>Or <a style = "align-self: center; height:3rem; width: 3rem; font-size:1.5rem; margin-left:8px;"href = "loginform.php">Sign up</a> if you havent done so already..</h6>';
     }
+    //close div tag
     echo '</div>';
 }

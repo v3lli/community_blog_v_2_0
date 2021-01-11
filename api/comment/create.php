@@ -19,8 +19,7 @@ $comment = new Comment($db, $data->art_id);
 
 $comment->user_id = $data->user_id;
 $comment->body = $data->body;
-//var_dump($comment);
-// Create post
+
 if ($comment->create()) {
     echo json_encode(
         array('message' => 'Post Created')
