@@ -58,10 +58,10 @@ if(isset($_POST["Login"]))
             $_SESSION['isadmin'] = $res->isadmin;
             $_SESSION['created_at']= $res->created_at;
             curl_close($ch);
-            header("Location:" . $cur_loc. "?alert=success");
+            header("Location:" . $cur_loc);
             }else{
             curl_close($ch);
-            header("Location:" . $cur_loc . "?error=something_wrong");
+            header("Location:" . $cur_loc);
             }
     }
 
