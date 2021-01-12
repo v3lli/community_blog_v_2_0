@@ -2,8 +2,70 @@
 function render_header(){
 session_start();
 if(isset($_SESSION['handle'])){
+    if($_SESSION['isadmin'])
+    {
+        echo '<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real Visionaries Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<header class="mainheader">
+    <div class = "d-flex justify-content-between container">
+        <img class="ml-3 " style = "max-height: 5rem;" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
+        <div class = "ml-auto d-inline-flex justify-content-around align-items-center">
+            <p class="my-1"> Hi ' . $_SESSION['handle'] . '</p><br>
+            <form class="" action = "../controllas/logout.con.php" method = "POST">
+                <button class = "form-control-sm mx-3 btn-sm btn-outline-secondary" type = "submit" name = "logout">Log Out</button>
+            </form>
+        </div>
+    </div>
+    <nav class="ml-4 navbar navbar-light navbar-expand-lg bg-transparent navbar-custom">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">R V I</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-echo'<html>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link" href="#">MH Topics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Discussions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Archives</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.php">Creator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>';
+    }
+    else {
+        echo '<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,6 +121,7 @@ echo'<html>
         </div>
     </nav>
 </header>';
+    }
 }
 else{
 
@@ -120,6 +183,5 @@ echo'<html>
         </div>
     </nav>
 </header>';
-
 }
 }

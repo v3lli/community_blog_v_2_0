@@ -25,6 +25,7 @@ $post->subtitle = $data->subtitle;
 $post->description = $data->description;
 $post->cat_id = $data->cat_id;
 $post->thumbnail = $data->thumbnail;
+$post->isvideo = $data->isvideo;
 $post->spread = $data->spread;
 
 // Create post
@@ -32,9 +33,11 @@ if($post->create()) {
     echo json_encode(
         array('message' => 'Post Created')
     );
+    return true;
 } else {
     echo json_encode(
         array('message' => 'Post Not Created')
     );
+    return false;
 }
 

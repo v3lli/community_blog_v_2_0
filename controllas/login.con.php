@@ -1,8 +1,5 @@
 <?php
 
-//require "../config/Database.php";
-//require "../models/User.php";
-
 if(isset($_POST["Login"]))
 {
     if ((isset($_POST['pass_log1'])) && (isset($_POST['email_log1']))){

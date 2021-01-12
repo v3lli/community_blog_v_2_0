@@ -1,8 +1,5 @@
 <?php
 
-require "../config/Database.php";
-require "../models/User.php";
-
 if(isset($_POST["Signup"]))
 {
 
