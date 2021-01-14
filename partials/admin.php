@@ -24,7 +24,7 @@ echo '<html>
       For now though.. just post!<br>
         <br>
         <br>
-      <form method="post" action="../controllas/content.con.php" class="w-100" enctype="multipart/form-data">
+      <form method="post" action="../controllas/post.con.php" class="w-100" enctype="multipart/form-data">
           <input class = "form-control-sm form-former" type = "hidden" name = "url_post" value ="' . $_SERVER["REQUEST_URI"] . '"/>
           <div class="form-group">
               <label for="cat_id">Category</label>
@@ -63,8 +63,8 @@ echo '<html>
               <textarea type="text" name="body" value="" class="w-100" rows="4"></textarea>
           </div>
           <div class="form-group">
-              <label for ="thumbnail">Thumbnail image </label>
-              <input type="file" name="thumbnail" value="" class="w-100" />
+              <label for ="pc">Image Credits</label>
+              <input type="text" name="pc" value="" class="w-100"/>
           </div>
           <div class="form-group">
               <label for ="spread">Spread image </label>

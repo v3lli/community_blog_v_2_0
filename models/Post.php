@@ -123,6 +123,7 @@ class Post
         $this->description = htmlspecialchars(strip_tags($this->description));
         $this->thumbnail = htmlspecialchars(strip_tags($this->thumbnail));
         $this->spread = htmlspecialchars(strip_tags($this->spread));
+        $this->pc = htmlspecialchars(strip_tags($this->pc));
         $this->cat_id = htmlspecialchars(strip_tags($this->cat_id));
 
         // Bind data

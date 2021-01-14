@@ -28,6 +28,7 @@ $post->thumbnail = $data->thumbnail;
 $post->isvideo = $data->isvideo;
 $post->spread = $data->spread;
 
+//die($data);
 // Create post
 if($post->create()) {
     echo json_encode(
@@ -38,6 +39,6 @@ if($post->create()) {
     echo json_encode(
         array('message' => 'Post Not Created')
     );
-    return false;
+    return true;
 }
 

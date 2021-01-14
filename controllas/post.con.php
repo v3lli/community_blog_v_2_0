@@ -1,5 +1,6 @@
 <?php
 
+    include "thumbnail.gen.php";
 
     $title = $_POST["title"];
     $subtitle = $_POST["subtitle"];
@@ -8,7 +9,6 @@
     $description = $_POST["description"];
     $body = $_POST["body"];
     $isvideo = $_POST["isvideo"];
-    $thumb = $_FILES["thumbnail"];
     $spread = $_FILES["spread"];
     $pc = $_POST["pc"];
     $cur_loc = $_POST["url_post"];
@@ -16,7 +16,7 @@
 
     function horpload($file){
         $currentDir = "../";
-        $uploadDirectory = "/images/";
+        $uploadDirectory = "images/";
 
         $errors = []; // Store all foreseen and unforseen errors here
 
@@ -26,7 +26,8 @@
         $fileSize = $file['size'];
         $fileTmpName  = $file['tmp_name'];
         $fileType = $file['type'];
-        $fileExtension = strtolower(end(explode('.',$fileName)));
+        $full_name = explode(".",$fileName);
+        $fileExtension = strtolower(end($full_name));
 
         $uploadPath = $currentDir . $uploadDirectory . basename($fileName);
 
@@ -87,22 +88,25 @@
 // }
     if(isset($_POST["submit_post"]))
     {
-        $thumbdir = horpload($thumb);
-        $spreaddir = horpload($spread);
+        $spread_dir = horpload($spread);
+        $spread_loc = explode(".",$spread_dir);
+        $file_ext = array_pop($spread_loc);
+        $thumb_dir = $spread_loc[0] . "-thumb." . $file_ext;
+        $thumb_make = new thumbnailGenerator;
+        $done = $thumb_make->generate($spread_dir, 400, 400, $thumb_dir);
 
         $data = array(
-            'cat_id'=>$cat_id,
-            'author'=>$author,
-            'title'=>$title,
-            'description'=>$description,
-            'thumbnail'=>$thumbdir,
-            'spread'=>$spreaddir,
-            'subtitle'=>$subtitle,
-            'pc'=>$pc,
-            'isvideo'=>$isvideo,
-            'body'=>$body
+            'cat_id' => $cat_id,
+            'author' => $author,
+            'title' => $title,
+            'description' => $description,
+            'thumbnail' => $thumb_dir,
+            'spread' => $spread_dir,
+            'subtitle' => $subtitle,
+            'pc' => $pc,
+            'isvideo' => $isvideo,
+            'body' => $body
         );
-
         $ch = curl_init();
         $url = 'http://localhost:8888/rviii/api/post/create.php';
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -113,14 +117,15 @@
             'Access-Control-Allow-Origin: *',
             'Content-Type: application/json'
         ]);
-
         $res = curl_exec($ch);
-        if($res){
-            header("Location:" . $cur_loc);
+
+        if(json_decode($res)){
+            curl_close($ch);
+            header("Location:" . $cur_loc ."?alert=success");
         }else{
             curl_close($ch);
-            header("Location:" . $cur_loc);
-        }
+            header("Location:" . $cur_loc ."?alert=something_wrong");
+        }}
 //        $query = "INSERT INTO content_test2(title,author,info,body,thumb,spread) VALUES ('$title','$author','$info','$body','$thumbdir','$spreaddir')";
 //        $db = mysqli_query($connection,$query);
 //        if($db){
@@ -156,5 +161,5 @@
         // }
         // echo $thumbdir;
         // echo $spreaddir;
-    }
+
 
