@@ -93,7 +93,7 @@
         $file_ext = array_pop($spread_loc);
         $thumb_dir = $spread_loc[0] . "-thumb." . $file_ext;
         $thumb_make = new thumbnailGenerator;
-        $done = $thumb_make->generate($spread_dir, 400, 400, $thumb_dir);
+        $thumb_make->generate($spread_dir, 400, 400, $thumb_dir);
 
         $data = array(
             'cat_id' => $cat_id,
@@ -126,13 +126,7 @@
             curl_close($ch);
             header("Location:" . $cur_loc ."?alert=something_wrong");
         }}
-//        $query = "INSERT INTO content_test2(title,author,info,body,thumb,spread) VALUES ('$title','$author','$info','$body','$thumbdir','$spreaddir')";
-//        $db = mysqli_query($connection,$query);
-//        if($db){
-//            header("Location: ../index.php");
-//        }else{
-//            header("Location: admin.php");
-//        }
+
 
 
 
