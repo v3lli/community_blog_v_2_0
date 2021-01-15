@@ -13,6 +13,7 @@
     <list default="true" id="13711c26-bb0e-40d1-bb8d-466a0ad2a951" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllas/post.con.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllas/post.con.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IMG_0754.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <workItem from="1610012864382" duration="43731000" />
       <workItem from="1610441772365" duration="15722000" />
       <workItem from="1610559656372" duration="10789000" />
-      <workItem from="1610645853262" duration="3727000" />
+      <workItem from="1610645853262" duration="9172000" />
     </task>
     <servers />
   </component>

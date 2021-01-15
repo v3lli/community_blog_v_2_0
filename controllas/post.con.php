@@ -17,9 +17,7 @@
     function horpload($file){
         $currentDir = "../";
         $uploadDirectory = "images/";
-
         $errors = []; // Store all foreseen and unforseen errors here
-
         $fileExtensions = ['jpeg','jpg','png']; // Get all the file extensions
 
         $fileName = $file['name'];
@@ -44,7 +42,7 @@
 
             if ($didUpload) {
                 // echo "The file " . basename($fileName) . " has been uploaded";
-                return substr($uploadPath, 3);
+                return $uploadPath;
             } else {
                 echo "An error occurred somewhere. Try again or contact the admin";
             }
@@ -91,7 +89,7 @@
         $spread_dir = horpload($spread);
         $spread_loc = explode(".",$spread_dir);
         $file_ext = array_pop($spread_loc);
-        $thumb_dir = $spread_loc[0] . "-thumb." . $file_ext;
+        $thumb_dir = "../" . $spread_loc[2] . "-thumb." . $file_ext;
         $thumb_make = new thumbnailGenerator;
         $thumb_make->generate($spread_dir, 400, 400, $thumb_dir);
 
@@ -118,7 +116,6 @@
             'Content-Type: application/json'
         ]);
         $res = curl_exec($ch);
-
         if(json_decode($res)){
             curl_close($ch);
             header("Location:" . $cur_loc ."?alert=success");
