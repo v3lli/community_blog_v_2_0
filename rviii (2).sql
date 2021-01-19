@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jan 03, 2021 at 12:54 PM
+-- Generation Time: Jan 19, 2021 at 02:55 PM
 -- Server version: 5.7.30
 -- PHP Version: 7.4.9
 
@@ -55,6 +55,14 @@ CREATE TABLE `comment_test` (
   `create_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `comment_test`
+--
+
+INSERT INTO `comment_test` (`id`, `user_id`, `art_id`, `body`, `create_date`) VALUES
+(1, 1, 1, 'a fan', '2021-01-10 09:43:40'),
+(2, 1, 1, 'i said it first', '2021-01-10 11:11:03');
+
 -- --------------------------------------------------------
 
 --
@@ -81,7 +89,9 @@ CREATE TABLE `posts_test` (
 --
 
 INSERT INTO `posts_test` (`id`, `cat_id`, `author`, `title`, `body`, `subtitle`, `description`, `thumbnail`, `spread`, `pc`, `isvideo`, `created_at`) VALUES
-(1, 1, 'Redd', 'COPING WITH DEMONS: MENTAL HEALTH STORIES FROM THE PAST #1', 'Mental disorders without doubt have taken a large toll on society. People with these conditions have a diversity of experiences coping; from managing it well to being borderline suicidal. Living with a mental disorder is not easy and it goes without saying that coping with certain physical illnesses comes nowhere near coping with depression, anxiety and the likes. But as much as these illnesses way people down, it is not uncommon to hear stories of people who excelled greatly in life and in some cases, found ways to beat the illnesses. This article will be looking into the experiences of some well-known people with mental disorders.', 'Mental disorders without doubt have taken a large toll on society.', 'Mental disorders without doubt have taken a large toll on society. People with these conditions have a diversity of experiences coping; from managing it well to being borderline suicidal.', '..//images/linc.png', '..//images/IMG_1252.jpg', 'Unknown', 0, '2020-12-17 11:09:52');
+(1, 2, 'Redd', 'COPING WITH DEMONS', 'Mental disorders without doubt have taken a large toll on society. People with these conditions have a diversity of experiences coping; from managing it well to being borderline suicidal. Living with a mental disorder is not easy and it goes without saying that coping with certain physical illnesses comes nowhere near coping with depression, anxiety and the likes. But as much as these illnesses way people down, it is not uncommon to hear stories of people who excelled greatly in life and in some cases, found ways to beat the illnesses. This article will be looking into the experiences of some well-known people with mental disorders.', 'MENTAL HEALTH STORIES FROM THE PAST #1', 'Mental disorders without doubt have taken a large toll on society. People with these conditions have a diversity of experiences', '..//images/IMG_1252.jpg', '..//images/IMG_1252.jpg', 'Unknown', 0, '2020-12-17 11:09:52'),
+(2, 3, 'Black', 'Thoughts from a Balcony', 'Thoughts from a Balcony\r\n\r\nDumb and Getting older\r\nNumb and getting colder\r\nAs I write..\r\n\r\nwhat have I learned?\r\n\r\nI learned there are very few things have that cannot be taken from me..very few.\r\n\r\na past? yes.. but right now those are just a couple of memories, so I have memories.\r\nmost of which I even left with other people but memories all the same.\r\n\r\nI have a future but right now thats just a couple dreams/goals and might aswell just be conversation starters because nobody  promised that shit..\r\n\r\nso…the eventuality of death?..yes, Valar Freaking Moghulis\r\nbut as an animal I can’t think of that and the way my peace is set up..I don’t let it motivate me either, its too sure and thankfully..not right now\r\n\r\nRelationships?..whether people leave or not I will make my mark on them and they may leave theirs on me\r\nGod tho..that one’s always there, even right now\r\n\r\nSo Right Now?\r\n\r\nYeah, I have the now, and in it..I am any and everything I want.\r\n\r\nMuse ', 'Who am i?', 'Dumb and Getting older\r\nNumb and getting colder', '..//images/IMG_0754-thumb.jpg', '..//images/IMG_0754.jpg', 'velli instagram @emeka_velli', 0, '2021-01-16 11:19:59'),
+(3, 4, 'Mr Beans', 'I’m better than I know', 'I’m better than I know\r\n\r\nYou’re cute and you know\r\nHow I might go so cold\r\nand flip the switch on\r\nThe feelings for reasons surrounding how those three words from you are became my mountain of truth\r\nstories of how I got no one above you but on some other level doesn’t change the fact my intentions are true but really what good can I do. Insecure about my status quo apparently more than you know. Maybe it’s life? I never lived it before. But I walked the road to hell and back and all I stepped on were good intentions purer than I ever conceived.\r\nBravado; harder and harder I grow\r\nAnything else is the shit no one can ever relates to \r\nAnd I can never blame you and I’ll rather game you\r\n', 'Dare to believe', 'You’re cute and you know\r\nHow I might go so cold\r\n...', '..//images/IMG_1293-2-thumb.jpg', '../images/IMG_1293-2.jpg', 'velli instagram @emeka_velli', 0, '2021-01-17 04:07:30');
 
 -- --------------------------------------------------------
 
@@ -151,13 +161,13 @@ ALTER TABLE `category_test`
 -- AUTO_INCREMENT for table `comment_test`
 --
 ALTER TABLE `comment_test`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `posts_test`
 --
 ALTER TABLE `posts_test`
-  MODIFY `id` bigint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users_test`
