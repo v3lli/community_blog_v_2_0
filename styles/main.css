@@ -2,6 +2,9 @@
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
 }
+html{
+    font-size: calc(12px + (24px - 12px )*(100vw - 320px)/(1920px - 320px)); !important;
+}
 
 .pity-sans{
     font-family: 'PT Sans', sans-serif;
@@ -25,13 +28,6 @@
 }
 .brand{
     background-color: transparent;
-}
-
-.laga
-{
-    height: 4rem;
-    width:4rem;
-    padding-left: 2rem;
 }
 
 html{
@@ -61,6 +57,9 @@ margin-top: 2rem;
 }/* .invisible{
 background-color: transparent;
 } */
+.logo{
+    max-height: 5rem;
+}
 
 .navbar, nav{
     width: 100%;
@@ -71,7 +70,12 @@ background-color: transparent;
 .footer{
     background-color: var(--color-main);
 }
-
+.content-card-type-header{
+    font-size: 90%;
+}
+.content-card-text h6{
+    font-family: 'PT Sans', sans-serif;
+}
 .card
 {
     background-image: linear-gradient(#2B797E,#48BAC1);
@@ -91,6 +95,8 @@ footer{
 .jumbo{
     height: 82vh;
     background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 
 .footer
@@ -110,6 +116,66 @@ footer{
     background-color: transparent;
 
 }
+
+.article-header{
+    margin-top: 2rem;
+}
+
+.article-header h3{
+    margin-left: 1rem;
+    font-size: 140%;
+}
+
+.article-header p{
+    margin-left: 1rem;
+    font-size: 80%;
+}
+
+.article-body hr{
+    margin:auto;
+    margin-top:3rem;
+}
+
+.article-body figure figcaption {
+    margin-left: 1rem;
+    font-size: 80%
+}
+
+.article-body p{
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 115%;
+    font-family: 'Gupter', serif;
+}
+
+.well h4{
+    opacity: 0.45;
+}
+
+.comment-form form{
+    opacity: 0.85;
+}
+
+.article-sign-input{
+    height:1.5rem;
+    width: 6.5rem;
+    margin-left:0.2rem;
+}
+
+.article-sign-button{
+    height:1.5rem;
+    width: 3rem;
+    font-size:0.6rem;
+    margin-left:0.2rem;
+}
+
+.article-sign-link{
+    align-self: center;
+    height:3rem;
+    width: 3rem;
+    font-size:1.5rem;
+    margin-left:8px;
+}
 .card-body{
     color: white;
     background-color: var(--color-main-light);
@@ -124,7 +190,7 @@ body{
 }
 
 section header{
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
     color: var(--color-main);
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -157,7 +223,7 @@ html,body
 }
 
 .darktron{
-    object-fit:cover;
+    object-fit: cover;
     height:100%;
     width: 100%;
     padding-top: 200px;
@@ -171,7 +237,6 @@ html,body
     #title{
         font-size: 65%;
     }
-
     #type{
         font-size: 90%;
     }
@@ -179,7 +244,6 @@ html,body
     #info{
         font-size: 80%;
     }
-
     #author{
         font-size: 30%;
     }

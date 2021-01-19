@@ -1,6 +1,6 @@
 <?php
 
-function get_banner_content(){
+function get_content(){
     $ch = curl_init();
     $url = 'http://localhost:8888/rviii/api/post/read.php';
     curl_setopt($ch, CURLOPT_URL, $url);

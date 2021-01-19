@@ -2,7 +2,7 @@
 
 function get_article($id){
     $ch = curl_init();
-    $url = 'http://localhost:8888/rviii/api/post/read.php?id=' . $id;
+    $url = 'http://localhost:8888/rviii/api/post/read_one.php?id=' . $id;
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, [

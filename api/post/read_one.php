@@ -31,7 +31,7 @@ $postListItem = array(
     'description' => $post->description,
     'thumbnail' => $post->thumbnail,
     'spread' => $post->spread,
-    'pc'=> $pc,
+    'pc'=> $post->pc,
     'isvideo' => $post->isvideo,
     'created_at' => $post->created_at
 );

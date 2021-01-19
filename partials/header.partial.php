@@ -19,11 +19,11 @@ if(isset($_SESSION['handle'])){
 <body>
 <header class="mainheader">
     <div class = "d-flex justify-content-between container">
-        <img class="ml-3 " style = "max-height: 5rem;" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
-        <div class = "ml-auto d-inline-flex justify-content-around align-items-center">
-            <p class="my-1"> Hi ' . $_SESSION['handle'] . '</p><br>
-            <form class="" action = "../controllas/logout.con.php" method = "POST">
-                <button class = "form-control-sm mx-3 btn-sm btn-outline-secondary" type = "submit" name = "logout">Log Out</button>
+        <img class="ml-3 logo" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
+        <div class = "ml-auto d-inline-flex justify-content-around align-content-center">
+            <p class="align-self-center my-1"> Hi ' . $_SESSION['handle'] . '</p><br>
+            <form class="align-self-center" action = "../controllas/logout.con.php" method = "POST">
+                <button class = "mt-2 align-self-center mx-3 btn-sm btn-outline-secondary" type = "submit" name = "logout">Log Out</button>
             </form>
         </div>
     </div>
@@ -80,7 +80,7 @@ if(isset($_SESSION['handle'])){
 <body>
 <header class="mainheader">
     <div class = "d-flex justify-content-between container">
-        <img class="ml-3 " style = "max-height: 5rem;" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
+        <img class="ml-3 logo " src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
         <div class = "ml-auto d-inline-flex justify-content-around align-items-center">
             <p class="my-1"> Hi ' . $_SESSION['handle'] . '</p><br>
             <form class="" action = "../controllas/logout.con.php" method = "POST">
@@ -140,7 +140,7 @@ echo'<html>
 <body>
 <header class="mainheader">
     <div class = "d-flex justify-content-between container">
-        <img class="ml-3" style ="max-height: 5rem;" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
+        <img class="ml-3 logo" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
         <div class = "ml-auto d-inline-flex justify-content-around align-items-center">
             <form class = "form-group form-inline d-l-block" action="../controllas/login.con.php" method = "POST">
                 <input class = "form-control-sm form-former" type = "hidden" name = "url_log" value ="' . $_SERVER["REQUEST_URI"] . '"/>

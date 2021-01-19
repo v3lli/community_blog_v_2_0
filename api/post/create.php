@@ -27,7 +27,7 @@ $post->cat_id = $data->cat_id;
 $post->thumbnail = $data->thumbnail;
 $post->isvideo = $data->isvideo;
 $post->spread = $data->spread;
-
+$post->pc = $data->pc;
 //die($data);
 // Create post
 if($post->create()) {

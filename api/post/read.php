@@ -39,8 +39,8 @@ if ($number > 0){
             'created_at' => $created_at
         );
         array_push($post_list, $postListItem);
-        print_r( json_encode($post_list));
     }
+        print_r(json_encode($post_list));
 }else{
     return json_encode(
         array('message' => 'No Posts Found')
