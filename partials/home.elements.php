@@ -48,18 +48,33 @@ include_once '../controllas/art.con.php';
     }
     echo '</div>';
     echo '<nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
+          <ul id="pages" class="pagination justify-content-center">';
+        if($page_number == 1){
+            echo '<li class="page-item disabled">
               <a class="page-link" href="#" tabindex="-1">Previous</a>
             </li>';
-        for($j = 1; $j <= $no_of_pages;$j++){
-            echo '<li class="page-item"><a class="page-link" href="home.php">'.$j.'</a></li>';
+        }else{
+            echo '<li class="page-item">
+              <a class="page-link" href="home.php?page='.($page_number-1).'" tabindex="-1">Previous</a>
+            </li>';
         }
-        echo '<li class="page-item">
+        for($j = 1; $j <= $no_of_pages;$j++){
+            echo '<li class="page-item"><a class="page-link" href="home.php?page='.$j.'">'.$j.'</a></li>';
+        }
+        if ($page_number < $no_of_pages){
+            echo '<li class="page-item">
+              <a class="page-link" href="home.php?page='.($page_number+1).'">Next</a>
+            </li>
+            </ul>
+          </nav>';
+        }
+        if ($page_number == $no_of_pages){
+            echo '<li class="page-item disabled">
               <a class="page-link" href="#">Next</a>
             </li>
             </ul>
           </nav>';
+        }
  }
 
 
