@@ -88,8 +88,8 @@ include '../controllas/content.con.php';
 	        	<!-- Title and description row -->
 	            <div class="row">
 	                <div class="col col-md-10 offset-md-1 col-lg-10 offset-lg-2">
-	                	<h4 id="type-alt" class="text-left ">Watch</h4>
-	                	<hr>
+	                	<h4 id="type-alt" class="text-left pt-4 ">Watch</h4>
+	                	<hr id="line-alt">
 	                </div>
 	            </div>
 	            <!-- End title and description row -->

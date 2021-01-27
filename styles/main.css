@@ -65,9 +65,11 @@ html{
 .content-card-text h6{
     font-family: 'PT Sans', sans-serif;
 }
-
+#line-alt{
+    color: whitesmoke;
+}
 #type-alt{
-    color: silver !important;
+    color: whitesmoke;
 }
 .card
 {
@@ -224,7 +226,11 @@ html,body
 }
 
 .video-slide{
-    background-color: silver;
+    background-color: var(--color-main);
+}
+
+p.description{
+    color: whitesmoke;
 }
 
 @media only screen and (max-width:800px){
