@@ -47,7 +47,7 @@ include '../controllas/content.con.php';
                         <p id="info" class ="mt-1">' . $parts[$i]->description . '</p>
                     </div>
                 </div>
-                <p class="content-card-dated">on '.$parts[$i]->created_at.'</p>
+                <p class="content-card-dated text-right">on<small> '.$parts[$i]->created_at.'</small></p>
             </section>                            <hr class="w-75">';
     }
         else break;
@@ -56,12 +56,9 @@ include '../controllas/content.con.php';
 
     echo '<form class="form-control-sm" method="post" action="../controllas/page.con.php">
                 <select name = "per_page" class="form-select ml-4 mt-5" aria-label="Default select example">
-                  <option selected>Page Limit</option>
+                  <option selected>Per Page</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
-                  <option value="5">5</option>
-                  <option value="10">10</option>
-                  <option value="15">15</option>
                 </select>
                 <button class="form-control-sm" type="submit" name="submit_limit">Go</button>
             </form>';
@@ -90,8 +87,8 @@ include '../controllas/content.con.php';
 	        <div class="container">
 	        	<!-- Title and description row -->
 	            <div class="row">
-	                <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-	                	<h4 class="text-left">Watch</h4>
+	                <div class="col col-md-10 offset-md-1 col-lg-10 offset-lg-2">
+	                	<h4 id="type-alt" class="text-left ">Watch</h4>
 	                	<hr>
 	                </div>
 	            </div>

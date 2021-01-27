@@ -60,10 +60,14 @@ html{
     background-color: var(--color-main);
 }
 .content-card-type-header{
-    /*font-size: 90%;*/
+    font-size: 90%;
 }
 .content-card-text h6{
     font-family: 'PT Sans', sans-serif;
+}
+
+#type-alt{
+    color: silver !important;
 }
 .card
 {
@@ -109,12 +113,12 @@ footer{
 
 .article-header h3{
     margin-left: 1rem;
-    /*font-size: 140%;*/
+    font-size: 140%;
 }
 
 .article-header p{
     margin-left: 1rem;
-    /*font-size: 80%;*/
+    font-size: 80%;
 }
 
 .article-body hr{
@@ -124,13 +128,13 @@ footer{
 
 .article-body figure figcaption {
     margin-left: 1rem;
-    /*font-size: 80%*/
+    font-size: 80%
 }
 
 .article-body p{
     margin: auto;
     margin-top: 2rem;
-    /*font-size: 115%;*/
+    font-size: 115%;
     font-family: 'Gupter', serif;
 }
 
@@ -151,7 +155,7 @@ footer{
 .article-sign-button{
     height:1.5rem;
     width: 3rem;
-    /*font-size:0.6rem;*/
+    font-size:0.6rem;
     margin-left:0.2rem;
 }
 
@@ -159,7 +163,7 @@ footer{
     align-self: center;
     height:3rem;
     width: 3rem;
-    /*font-size:1.5rem;*/
+    font-size:1.5rem;
     margin-left:8px;
 }
 .card-body{
@@ -170,13 +174,13 @@ footer{
 body{
     background-color: white;
     background-repeat: repeat;
-    /* background-image: url("../images/cream_pixels_@2X.png"); */
+     background-image: url("../images/cream_pixels_@2X.png");
     background-size: 122px 122px;
 
 }
 
 section header{
-    /*font-size: 1.5rem;*/
+    font-size: 1.5rem;
     color: var(--color-main);
     margin-bottom: 1rem;
     margin-left: 1rem;
@@ -220,7 +224,7 @@ html,body
 }
 
 .video-slide{
-    background-color: var(--color-main);
+    background-color: silver;
 }
 
 @media only screen and (max-width:800px){
