@@ -11,44 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13711c26-bb0e-40d1-bb8d-466a0ad2a951" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/video/read.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllas/page.con.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Video.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/config.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick-theme.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick-theme.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/slick/slick.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/post/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/post/read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllas/content.con.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllas/content.con.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partials/footer.partial.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/footer.partial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partials/header.partial.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/header.partial.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partials/home.elements.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/home.elements.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partials/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partials/vc.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/post/read_all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/aoscripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/aoscripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/paginator.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/paginator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +114,7 @@
       <workItem from="1610743866685" duration="37105000" />
       <workItem from="1611044435868" duration="14701000" />
       <workItem from="1611098326267" duration="60094000" />
-      <workItem from="1611603745814" duration="23919000" />
+      <workItem from="1611603745814" duration="24988000" />
     </task>
     <servers />
   </component>
