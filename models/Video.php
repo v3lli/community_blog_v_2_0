@@ -1,6 +1,5 @@
 <?php
 
-
 class Video
 {
     private $conn;
@@ -19,15 +18,15 @@ class Video
         $query = 'SELECT v.id, 
                             v.video_url, 
                             v.description,
+                            v.created_at
                                 FROM ' . $this->table . ' v
                                     ORDER BY
-                                       p.created_at DESC
+                                       v.created_at DESC
                                        LIMIT 0,3';
 
-
         $stmt = $this->conn->prepare($query);
-        $stmt->execute();
 
+        $stmt->execute();
         return $stmt;
     }
 

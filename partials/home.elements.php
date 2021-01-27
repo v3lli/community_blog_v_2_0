@@ -84,6 +84,7 @@ include '../controllas/content.con.php';
  }
 
  function render_video_slide(){
+     $vids = get_vids();
      echo '<!-- Top content -->
         <div class="top-content my-2 py-2 video-slide">
 	        <div class="container">
@@ -108,21 +109,26 @@ include '../controllas/content.con.php';
 	       					<div class="carousel-inner">
 	       						<div class="carousel-item active">
 	       						        <p class="description">
-                                            This is a free Carousel template with Videos made with the Bootstrap 4 framework. 
-                                            Click on the indicators, controls and links to interact with the page.
+                                            '.$vids[0]->description.'
                                         </p>
 									<div class="embed-responsive embed-responsive-16by9">
-	       								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6hgVihWjK2c?rel=0" allowfullscreen></iframe>
+	       								<iframe class="embed-responsive-item" src="'.$vids[0]->video_url.'" allowfullscreen></iframe>
 	       							</div>
 	       						</div>
 	       						<div class="carousel-item">
+	       						<p class="description">
+                                            '.$vids[1]->description.'
+                                        </p>
 	       							<div class="embed-responsive embed-responsive-16by9">
-	       								<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/84910153?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" allowfullscreen></iframe>
+	       								<iframe class="embed-responsive-item" src="'.$vids[1]->video_url.'" allowfullscreen></iframe>
 	       							</div>
 	       						</div>
 	       						<div class="carousel-item">
+	       						<p class="description">
+                                            '.$vids[2]->description.'
+                                        </p>
 	       							<div class="embed-responsive embed-responsive-16by9">
-	       								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oiKj0Z_Xnjc" allowfullscreen></iframe>
+	       								<iframe class="embed-responsive-item" src="'.$vids[2]->video_url.'" allowfullscreen></iframe>
 	       							</div>
 	       						</div>
 	       					</div>
