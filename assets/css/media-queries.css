@@ -1,0 +1,45 @@
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.top-content .carousel-control-prev { left: -92px; }
+	.top-content .carousel-control-next { right: -92px; }
+
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.top-content .carousel-control-prev { left: -86px; }
+	.top-content .carousel-control-next { right: -86px; }
+
+}
+
+@media (max-width: 767px) {
+
+	.top-content { padding: 20px 0 100px 0; }
+	.top-content h1 { font-size: 22px; }
+	.top-content .description { margin: 10px 0 0 0; }
+	.top-content .carousel-control-prev, 
+	.top-content .carousel-control-next { display: none; }
+	.top-content .carousel-indicators li { margin-left: 10px; margin-right: 10px; }
+
+}
+
+@media (max-width: 575px) {
+	
+	h1, h2 { font-size: 22px; }
+	h3 { font-size: 18px; }
+
+}
+
+
+/* Retina-ize images/icons */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+}

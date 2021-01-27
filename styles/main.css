@@ -1,11 +1,8 @@
 *{
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
-}
-html{
     font-size: calc(12px + (24px - 12px )*(100vw - 320px)/(1920px - 320px)); !important;
 }
-
 .pity-sans{
     font-family: 'PT Sans', sans-serif;
 }
@@ -48,15 +45,7 @@ html{
     position: absolute;
     z-index: 100;
 }
-/*
-.content{
-margin-top: 1.5rem;
-}
-/*.content figure{
-margin-top: 2rem;
-}/* .invisible{
-background-color: transparent;
-} */
+
 .logo{
     max-height: 5rem;
 }
@@ -71,7 +60,7 @@ background-color: transparent;
     background-color: var(--color-main);
 }
 .content-card-type-header{
-    font-size: 90%;
+    /*font-size: 90%;*/
 }
 .content-card-text h6{
     font-family: 'PT Sans', sans-serif;
@@ -88,10 +77,6 @@ footer{
     height: 80px;
     width:100%;
 }
-/* .sidecards {
-  width: 30%;
-  margin-top: 3rem;
-}*/
 .jumbo{
     height: 82vh;
     background-size: cover;
@@ -108,6 +93,7 @@ footer{
   background-color:var(--color-main);
   color:coral;
 } */
+
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: #ff5249;
@@ -123,12 +109,12 @@ footer{
 
 .article-header h3{
     margin-left: 1rem;
-    font-size: 140%;
+    /*font-size: 140%;*/
 }
 
 .article-header p{
     margin-left: 1rem;
-    font-size: 80%;
+    /*font-size: 80%;*/
 }
 
 .article-body hr{
@@ -138,13 +124,13 @@ footer{
 
 .article-body figure figcaption {
     margin-left: 1rem;
-    font-size: 80%
+    /*font-size: 80%*/
 }
 
 .article-body p{
     margin: auto;
     margin-top: 2rem;
-    font-size: 115%;
+    /*font-size: 115%;*/
     font-family: 'Gupter', serif;
 }
 
@@ -165,7 +151,7 @@ footer{
 .article-sign-button{
     height:1.5rem;
     width: 3rem;
-    font-size:0.6rem;
+    /*font-size:0.6rem;*/
     margin-left:0.2rem;
 }
 
@@ -173,7 +159,7 @@ footer{
     align-self: center;
     height:3rem;
     width: 3rem;
-    font-size:1.5rem;
+    /*font-size:1.5rem;*/
     margin-left:8px;
 }
 .card-body{
@@ -231,6 +217,10 @@ html,body
 
 .navbar-custom{
     background-color: transparent;
+}
+
+.video-slide{
+    background-color: var(--color-main);
 }
 
 @media only screen and (max-width:800px){

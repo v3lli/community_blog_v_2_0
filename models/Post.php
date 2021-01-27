@@ -50,6 +50,35 @@ class Post
         return $stmt;
     }
 
+    public function reader($off, $lim){
+        $query = 'SELECT c.name as cat_name, 
+                                p.id, 
+                                p.cat_id, 
+                                p.author, 
+                                p.title, 
+                                p.body, 
+                                p.subtitle, 
+                                p.description, 
+                                p.thumbnail, 
+                                p.spread,
+                                p.pc,
+                                p.isvideo, 
+                                p.created_at
+                                FROM ' . $this->table . ' p
+                                LEFT JOIN
+                                    category_test c ON p.cat_id = c.id
+                                    ORDER BY
+                                       p.created_at DESC
+                                       LIMIT ?,?';
+
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(1, $off, PDO::PARAM_INT);
+        $stmt->bindParam(2, $lim, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt;
+    }
+
 
     public function read_single(){
         $query = 'SELECT c.name as cat_name, 

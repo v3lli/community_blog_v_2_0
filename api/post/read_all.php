@@ -1,4 +1,5 @@
 <?php
+
 //headers
 header('Access-Control-Allow-Origin: *');
 header('Content-Type:application/json');
@@ -14,17 +15,14 @@ $db = $database->connect();
 //post instance
 $post = new Post($db);
 
-$offset = isset($_GET["off"]) ? $_GET["off"] : die();
-$limit = isset($_GET["lim"]) ? $_GET["lim"] : die();
-
 //query
-$res = $post->reader($offset,$limit);
+$res = $post->read();
 //count
 //
 $number = $res->rowCount();
-if ($number > 0){
+if ($number > 0) {
     $post_list = array();
-    while($row = $res->fetch(PDO::FETCH_ASSOC)) {
+    while ($row = $res->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
         $postListItem = array(
             'id' => $id,
@@ -43,8 +41,8 @@ if ($number > 0){
         );
         array_push($post_list, $postListItem);
     }
-        print_r(json_encode($post_list));
-}else{
+    print_r(json_encode($post_list));
+} else {
     return json_encode(
         array('message' => 'No Posts Found')
     );

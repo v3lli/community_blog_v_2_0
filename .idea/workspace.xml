@@ -11,9 +11,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13711c26-bb0e-40d1-bb8d-466a0ad2a951" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/video/read.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllas/page.con.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Video.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/config.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/fonts/slick.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick-theme.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick-theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slick/slick.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/post/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/post/read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllas/content.con.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllas/content.con.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/footer.partial.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/footer.partial.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/header.partial.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/header.partial.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partials/home.elements.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/home.elements.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/partials/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partials/vc.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/post/read_all.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/aoscripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/aoscripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/paginator.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/paginator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +85,27 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/scripts/" />
       <recent name="$PROJECT_DIR$/styles" />
-      <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="paginator.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/scripts/paginator.js" working-dir="$PROJECT_DIR$/scripts">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.paginator.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -99,7 +148,9 @@
       <workItem from="1610559656372" duration="10789000" />
       <workItem from="1610645853262" duration="10474000" />
       <workItem from="1610743866685" duration="37105000" />
-      <workItem from="1611044435868" duration="14080000" />
+      <workItem from="1611044435868" duration="14701000" />
+      <workItem from="1611098326267" duration="60094000" />
+      <workItem from="1611603745814" duration="23919000" />
     </task>
     <servers />
   </component>
@@ -123,10 +174,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="316" y="50" key="#PHP/0.0.1280.800@0.0.1280.800" timestamp="1609376831824" />
-    <state x="368" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609353948163">
+    <state x="368" y="209" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611525949597">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="368" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1609353948163" />
+    <state x="368" y="209" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800@0.0.1280.800" timestamp="1611525949597" />
     <state x="479" y="224" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608588283017">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -135,14 +186,78 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="388" y="262" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.800@0.0.1280.800" timestamp="1608627944084" />
-    <state x="714" y="133" key="NewPhpClassDialog" timestamp="1608588259443">
+    <state width="1238" height="264" key="GridCell.Tab.0.bottom" timestamp="1611596611179">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="714" y="133" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1608588259443" />
-    <state x="772" y="330" key="NewPhpFileDialog" timestamp="1610499305954">
+    <state width="1238" height="264" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1611596611179" />
+    <state width="1238" height="264" key="GridCell.Tab.0.center" timestamp="1611596611178">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="772" y="330" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1610499305954" />
+    <state width="1238" height="264" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1611596611178" />
+    <state width="1238" height="264" key="GridCell.Tab.0.left" timestamp="1611596611177">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1611596611177" />
+    <state width="1238" height="264" key="GridCell.Tab.0.right" timestamp="1611596611179">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1611596611179" />
+    <state width="1238" height="264" key="GridCell.Tab.1.bottom" timestamp="1611596611182">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1611596611182" />
+    <state width="1238" height="264" key="GridCell.Tab.1.center" timestamp="1611596611180">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1611596611180" />
+    <state width="1238" height="264" key="GridCell.Tab.1.left" timestamp="1611596611180">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1611596611180" />
+    <state width="1238" height="264" key="GridCell.Tab.1.right" timestamp="1611596611181">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1611596611181" />
+    <state width="1238" height="264" key="GridCell.Tab.2.bottom" timestamp="1611596611185">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.2.bottom/0.0.1280.800@0.0.1280.800" timestamp="1611596611185" />
+    <state width="1238" height="264" key="GridCell.Tab.2.center" timestamp="1611596611184">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.2.center/0.0.1280.800@0.0.1280.800" timestamp="1611596611184" />
+    <state width="1238" height="264" key="GridCell.Tab.2.left" timestamp="1611596611183">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.2.left/0.0.1280.800@0.0.1280.800" timestamp="1611596611183" />
+    <state width="1238" height="264" key="GridCell.Tab.2.right" timestamp="1611596611185">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.2.right/0.0.1280.800@0.0.1280.800" timestamp="1611596611185" />
+    <state width="1238" height="264" key="GridCell.Tab.3.bottom" timestamp="1611596611189">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.3.bottom/0.0.1280.800@0.0.1280.800" timestamp="1611596611189" />
+    <state width="1238" height="264" key="GridCell.Tab.3.center" timestamp="1611596611187">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.3.center/0.0.1280.800@0.0.1280.800" timestamp="1611596611187" />
+    <state width="1238" height="264" key="GridCell.Tab.3.left" timestamp="1611596611186">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.3.left/0.0.1280.800@0.0.1280.800" timestamp="1611596611186" />
+    <state width="1238" height="264" key="GridCell.Tab.3.right" timestamp="1611596611188">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="264" key="GridCell.Tab.3.right/0.0.1280.800@0.0.1280.800" timestamp="1611596611188" />
+    <state x="714" y="133" key="NewPhpClassDialog" timestamp="1611704791664">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="714" y="133" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1611704791664" />
+    <state x="772" y="330" key="NewPhpFileDialog" timestamp="1611704462448">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="772" y="330" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1611704462448" />
     <state x="785" y="344" key="NewPhpFileDialog/34.23.1246.777@34.23.1246.777" timestamp="1610245285315" />
     <state x="503" y="204" key="refactoring.ChangeSignatureDialog" timestamp="1610788875442">
       <screen x="34" y="23" width="1246" height="777" />

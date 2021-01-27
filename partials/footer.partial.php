@@ -1,6 +1,6 @@
 <?php
 function render_footer(){
-    echo'<div class="footer">
+    echo '<div class="footer">
           <div id="accordion">
             <div class="card">
               <div class="card-header">
@@ -68,15 +68,16 @@ function render_footer(){
               <img src="../images/icons/whatsapp (1).png">
           </li>
         </ul>
-        <div class="ml-auto mt-3">© 2019 R.V.I.</div>
+        <div class="ml-auto mt-3">© 2021 R.V.I.</div>
       </footer>
       <script src = "../scripts/jquery-3.5.1.min.js"></script>
-      <script src ="../scripts/paginator.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src ="../scripts/paginator.js"></script>
       <script src ="../scripts/aoscripts.js"></script>
-      
   </body>
 </html>';
 }
+
+//
