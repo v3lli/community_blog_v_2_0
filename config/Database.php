@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private $host = 'localhost';
+    private $host = 'interhost.mysql.database.azure.com';
     private $db_name = 'rviii';
-    private $username = 'root';
-    private $password = 'root';
+    private $username = 'rootadmin';
+    private $password = 'Rviiir00t';
     private $conn;
 
     //connect to database
