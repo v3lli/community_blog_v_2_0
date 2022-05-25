@@ -1,7 +1,7 @@
 <?php
 class Database
 {
-    private $host = 'interhost.mysql.database.azure.com';
+    private $host = 'interhost.mysql.database.azure.com:3306';
     private $db_name = 'rviii';
     private $username = 'rootadmin';
     private $password = 'Rviiir00t';
