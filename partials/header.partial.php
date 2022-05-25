@@ -23,7 +23,7 @@ if(isset($_SESSION['handle'])){
 </head>
 <body>
 <header class="mainheader">
-    <div class = "d-flex justify-content-between container">
+    <div class = "d-flex justify-content-between">
         <img class="ml-3 logo" src="../images/imageonline-co-whitebackgroundremoved.PNG" alt="">
         <div class = "ml-auto d-inline-flex justify-content-around align-content-center">
             <p class="align-self-center my-1"> Hi ' . $_SESSION['handle'] . '</p><br>
