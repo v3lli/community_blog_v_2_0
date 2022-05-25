@@ -27,7 +27,7 @@ include '../controllas/content.con.php';
     }
     $offset = (($page_number -1) * $limit)+1;
     $arts = get_content();
-    $post_number =  sizeof($arts);
+    // $post_number =  sizeof($arts);
     $post_number =  sizeof(array($arts));
     $parts = get_page_content($offset, $limit);
     $no_of_pages = ceil($post_number/$limit);
