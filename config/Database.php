@@ -1,10 +1,10 @@
 <?php
 class Database
 {
-    private $host = getenv("DB_HOST");
-    private $db_name = getenv("DB_DATABASE");
-    private $username = getenv("DB_USERNAME");
-    private $password = getenv("DB_PASSWORD");
+    private $host = getenv('DB_HOST');
+    private $db_name = getenv('DB_DATABASE');
+    private $username = getenv('DB_USERNAME');
+    private $password = getenv('DB_PASSWORD');
     private $conn;
 
     //connect to database
