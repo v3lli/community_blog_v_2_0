@@ -1,10 +1,10 @@
 <?php 
 class Database
 {
-    private $host = "communityblog-server.mysql.database.azure.com";
-    private $db_name = "rviii";
-    private $username = "trfnqkctdj@communityblog-server.mysql.database.azure.com";
-    private $password = "6MD5C8YDF8PLBW3V$";
+    private $host = $_ENV["APPSETTING_DB_HOST"]//"communityblog-server.mysql.database.azure.com";
+    private $db_name = $_ENV["APPSETTING_DB_DATABASE"] //"rviii";
+    private $username = $_ENV["APPSETTING_DB_USERNAME"] //"trfnqkctdj@communityblog-server.mysql.database.azure.com";
+    private $password = $_ENV["APPSETTING_DB_PASSWORD"] //"6MD5C8YDF8PLBW3V$";
     private $conn;
 
     //connect to database
