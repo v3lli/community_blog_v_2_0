@@ -3,7 +3,7 @@ class Database
 {
     private $host = "communityblog-server.mysql.database.azure.com";
     private $db_name = "rviii";
-    private $username = "trfnqkctdj@communityblog-server.mysql.database.azure.com";
+    private $username = "trfnqkctdj";
     private $password = "6MD5C8YDF8PLBW3V$";
     private $conn;
 
