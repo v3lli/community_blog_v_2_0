@@ -1,11 +1,11 @@
 <?php
 class Database
 {
-    public $host = getenv("DB_HOST");
-    public $db_name = getenv("DB_DATABASE");
-    public $username = getenv("DB_USERNAME");
-    public $password = getenv("DB_PASSWORD");
-    public $conn;
+    private $host = "communityblog-server.mysql.database.azure.com";
+    private $db_name = "rviii";
+    private $username = "trfnqkctdj@communityblog-server.mysql.database.azure.com";
+    private $password = "6MD5C8YDF8PLBW3V$";
+    private $conn;
 
     //connect to database
     public function connect() {
